@@ -1,0 +1,133 @@
+.body-container {
+  padding-top: 60px;
+  margin-left: -9px;
+  margin-right: -9px;
+  display: grid;
+  row-gap: 0px;
+  column-gap: 0px;
+}
+.product-one {
+  width : 100%;
+  height: 500px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(213, 212, 210);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 1;
+}
+
+.rating {
+  display: flex;
+  margin-left: -90px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+}
+.add-to {
+  padding: 10px 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(228, 221, 10);
+}
+.select-option {
+  width: 50px;
+  display: inline-block;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  background-color: rgb(238, 234, 234);
+  padding-top: 4px;
+  font-size: 16px;
+  padding-bottom: 4px;
+  border-radius: 6px;
+  border-color: rgb(200, 199, 199);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.143);
+  margin-left: -166px;
+}
+
+.color-section {
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 30px;
+  margin-top: -26px;
+  margin-left: -100px;
+}
+.color-section2 {
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 30px;
+  margin-top: -26px;
+  margin-left: -64px;
+}
+.Size-section {
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 30px;
+  margin-left: -100px;
+}
+.inner-text{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.buttons {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.nani {
+  padding: 6px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgb(178, 176, 176);
+  font-size: 16px;
+  font-weight: 500;
+}
+.images {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+}
+
+.normal-space{
+  flex: 1;
+  display: block;
+}
+
+@media (max-width : 500px) {
+  .body-container {
+    grid-template-columns : 1fr;
+  }
+}
+@media (min-width : 501px) and (max-width: 700px) {
+  .body-container {
+    grid-template-columns : 1fr 1fr;
+  }
+}
+@media (min-width : 701px) and (max-width : 1000px) {
+  .body-container {
+    grid-template-columns : 1fr 1fr 1fr
+  }
+}
+
+@media (min-width : 1001px) and (max-width: 1360px) {
+  .body-container {
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width : 1361px) and  (max-width : 1800px) {
+  .body-container {
+    grid-template-columns : 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width : 1801px) and (max-width : 10000px) {
+  .body-container {
+    grid-template-columns : 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

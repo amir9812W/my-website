@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Image Swap</title>
+    <style>
+      .imageContainer1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -100px;
+      }
+      body {
+        justify-content: center;
+        align-items: center;
+        height: 1500px;
+        display: flex;
+        background-image: linear-gradient(to right,rgba(128, 0, 128, 0.16), rgba(243, 103, 43, 0.244));
+      }
+    </style>
+</head>
+<body>
+    <div class ='imageContainer1' id="imageContainer">
+        <img id="image" src="photos/22.jpg" width="380px" alt="Image 1">
+    </div>
+    <script>
+        const imageContainer = document.getElementById("imageContainer");
+        const image = document.getElementById("image");
+        const imageSources = ['photos/22 copy.jpg','photos/dunno copy 2.jpg','photos/22.jpg']; // Add more image sources if needed
+        let currentImageIndex = 0;
+
+        function swapImage() {
+            image.src = imageSources[currentImageIndex];
+            image.alt = `Image ${currentImageIndex + 1}`;
+            currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+        }
+
+        imageContainer.addEventListener("click", swapImage);
+
+        // Automatically swap images in an infinite loop
+        setInterval(swapImage, 4000); // Change the interval (in milliseconds) as needed
+    </script>
+</body>
+</html>

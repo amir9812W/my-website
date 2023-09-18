@@ -1,0 +1,134 @@
+.body-container {
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+body {
+  margin-bottom: 1000px;
+  min-width: fit-content;
+}
+.body1 {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 12px;
+  border-color: rgb(224, 226, 227);;
+}
+.section1 {
+  background-color: rgba(123, 123, 124, 0.962);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+.section2 {
+  margin-top: 50px;
+  display: grid;
+}
+.your {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.first {
+  font-size: 20px;
+  font-weight: 500;
+}
+.second {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.first-product {
+  display: grid;
+  grid-template-columns: 140px 1fr 200px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 30px;
+ 
+}
+.detail {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+.black {
+  font-weight: 700;
+  font-size: 22px;
+  color: black;
+}
+.arrive, .quanity {
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+
+.buttons {
+  display: grid;
+  width: 200px;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+.buy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-size: 18px;
+  background-color: rgb(255, 216, 20);
+  border: none;
+  border-radius: 8px;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-size: 18px;
+  background-color: rgb(245, 244, 243);
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgb(158, 155, 155);
+  width: 100%;
+  margin-left: 14px;
+}
+
+
+@media (max-width : 900px) {
+  .section1 {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .two {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media(max-width : 1100px) {
+  .first-product {
+    grid-template-columns: 160px 1fr;
+  }
+  .track {
+    margin-top: 30px;
+    margin-left: 190px;
+    width: 200px;
+  }
+}
+
+
+@media(max-width : 600px){
+  .body-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
