@@ -16,8 +16,6 @@ const button = document.querySelector('.input2')
 const nani = document.querySelector('.type2')
 const list = document.querySelector('.who')
 
-console.log('wtf is wrong with this fucking piece of shit')
-
 onValue(refrence2, function(snapshot) {
   if(snapshot.exists()){
     let arr = Object.entries(snapshot.val())
