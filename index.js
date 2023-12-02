@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"
 
-import { getDatabase, ref ,push, onValue, remove } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js'
+import { getDatabase, ref ,push, onValue, remove } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js'
 
  const firebaseConfig = {
     apiKey: "AIzaSyAVfsykJ4-590g-I8Bga5VOCbmEOyUNvW8",
