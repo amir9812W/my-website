@@ -9,7 +9,7 @@ import { getDatabase, ref ,push, onValue, remove } from 'https://www.gstatic.com
 const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
 const refrence = ref(database, 'movies')
-const refrence2 = ref(database, 'toDos')
+
 
 const button = document.querySelector('.input2')
 const nani = document.querySelector('.type2')
@@ -47,12 +47,12 @@ onValue(refrence2, function(snapshot) {
 document.querySelector('body').addEventListener('keydown', function(event) {
   if(event.key === 'Enter'){
     let data3 = button.value
-    push(refrence2, data3)
+    push(refrence, data3)
   }
 })
 
 
 nani.addEventListener('click', function() {
   let data3 = button.value
-  push(refrence2, data3)
+  push(refrence, data3)
 })
