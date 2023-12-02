@@ -3,13 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebas
 import { getDatabase, ref ,push, onValue, remove } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js'
 
  const firebaseConfig = {
-    apiKey: "AIzaSyAVfsykJ4-590g-I8Bga5VOCbmEOyUNvW8",
-    authDomain: "project-2-b0f21.firebaseapp.com",
     databaseURL: "https://project-2-b0f21-default-rtdb.firebaseio.com",
-    projectId: "project-2-b0f21",
-    storageBucket: "project-2-b0f21.appspot.com",
-    messagingSenderId: "269562038223",
-    appId: "1:269562038223:web:9df166a516ed8c1ee8f4ba"
   };
 
 const app = initializeApp(firebaseConfig)
