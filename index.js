@@ -7,7 +7,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-const reference = ref(database, 'movies'); // Corrected variable name
+const reference = ref(database, 'Hovies'); // Corrected variable name
 
 const button = document.querySelector('.input2');
 const nani = document.querySelector('.type2');
@@ -28,7 +28,7 @@ onValue(reference, function(snapshot) { // Corrected variable name
       list.append(newEl);
 
       newEl.addEventListener('click', function() {
-        let exactLocation = ref(database, `movies/${ids}`);
+        let exactLocation = ref(database, `Hovies/${ids}`);
         remove(exactLocation);
       });
     }
