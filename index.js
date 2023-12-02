@@ -1,13 +1,18 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js'
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"
 
 import { getDatabase, ref ,push, onValue, remove } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js'
 
-const appSettings = {
-  databaseURL : "https://project-2-b0f21-default-rtdb.firebaseio.com/"
-}
+ const firebaseConfig = {
+    apiKey: "AIzaSyAVfsykJ4-590g-I8Bga5VOCbmEOyUNvW8",
+    authDomain: "project-2-b0f21.firebaseapp.com",
+    databaseURL: "https://project-2-b0f21-default-rtdb.firebaseio.com",
+    projectId: "project-2-b0f21",
+    storageBucket: "project-2-b0f21.appspot.com",
+    messagingSenderId: "269562038223",
+    appId: "1:269562038223:web:9df166a516ed8c1ee8f4ba"
+  };
 
-
-const app = initializeApp(appSettings)
+const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
 const refrence = ref(database, 'movies')
 const refrence2 = ref(database, 'toDos')
