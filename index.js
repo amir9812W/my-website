@@ -28,7 +28,7 @@ onValue(reference, function(snapshot) { // Corrected variable name
       list.append(newEl);
 
       newEl.addEventListener('click', function() {
-        let exactLocation = ref(database, `toDos/${ids}`);
+        let exactLocation = ref(database, `movies/${ids}`);
         remove(exactLocation);
       });
     }
