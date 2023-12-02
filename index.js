@@ -3,7 +3,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref ,push, onValue, remove } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js'
 
 const appSettings = {
-  databaseURL : "https://idk-yet-a525c-default-rtdb.asia-southeast1.firebasedatabase.app/"
+  databaseURL : "https://project-2-b0f21-default-rtdb.firebaseio.com/"
 }
 
 
